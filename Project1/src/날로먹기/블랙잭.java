@@ -1,7 +1,6 @@
 package 날로먹기;
 
 import java.util.ArrayList;
-//import java.util.List;
 import java.util.Scanner;
 
 public class 블랙잭 {
@@ -58,7 +57,7 @@ public class 블랙잭 {
 					System.out.println("무승부!!");
 					}
 			if (a == 2) {
-				if(sum2>=10 && sum2<=18) {
+				if(sum2>=10 && sum2<=17) {
 					String newCard2 = drawCard(deck);
 				    int cardValue2 = CardValue(newCard2);
 				    sum2 += cardValue2;
