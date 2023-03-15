@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 //16진수 -> 2진수
 
-//String addr = "서울 특별시 서대문구 신촌";
-//boolean isContain = addr.contains("서울");
-//if(isContain) { //true 이면 실행
-//	System.out.println("addr 에는 특별시 라는 문자열이 있어요!");
+
 public class 진수변환기 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
