@@ -1,14 +1,15 @@
+package OdellO;
 import java.util.Scanner;
 
-public class OmokGame {
-    private static int BOARD_SIZE = 19;
+public class Odell5 {
+    private static final int BOARD_SIZE = 8;
     private static final char BLACK_STONE = '●';
     private static final char WHITE_STONE = '○';
     
     private char[][] board = new char[BOARD_SIZE][BOARD_SIZE];
     private boolean isBlackTurn = true;
     
-    public OmokGame() {
+    public Odell5() {
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
                 board[i][j] = '-';
@@ -39,7 +40,7 @@ public class OmokGame {
         boolean isGameOver = true;
         
         // 게임 시작
-        System.out.println("오목 게임!!!");
+        System.out.println("5 dell 5!!!");
         while (isGameOver) {
             // 오목판 출력
             printBoard();
@@ -86,58 +87,32 @@ private boolean checkWin(int row, int col) {
     char stone = board[row][col];
     
     // 가로 체크
-    int count = 0;
     for (int i = 0; i < BOARD_SIZE; i++) {
         if (board[row][i] == stone) {
-            count++;
-            if (count == 5) {
-                return true;
-            }
-        } else {
-            count = 0;
         }
     }
     
     // 세로 체크
-    count = 0;
+ 
     for (int i = 0; i < BOARD_SIZE; i++) {
         if (board[i][col] == stone) {
-            count++;
-            if (count == 5) {
-                return true;
-            }
-        } else {
-            count = 0;
+      
         }
     }
     
     // 대각선 체크
-    count = 0;
     for (int i = -4; i <= 4; i++) {
         int r = row + i;
         int c = col + i;
         if (r >= 0 && r < BOARD_SIZE && c >= 0 && c < BOARD_SIZE && board[r][c] == stone) {
-            count++;
-            if (count == 5) {
-                return true;
-            }
-        } else {
-            count = 0;
         }
     }
     
     // 역대각선 체크
-    count = 0;
     for (int i = -4; i <= 4; i++) {
         int r = row - i;
         int c = col + i;
         if (r >= 0 && r < BOARD_SIZE && c >= 0 && c < BOARD_SIZE && board[r][c] == stone) {
-            count++;
-            if (count == 5) {
-                return true;
-            }
-        } else {
-            count = 0;
         }
     }
     
@@ -145,7 +120,7 @@ private boolean checkWin(int row, int col) {
 }
 
 public static void main(String[] args) {
-    OmokGame game = new OmokGame();
+	Odell5 game = new Odell5();
     game.play();
 }
 }

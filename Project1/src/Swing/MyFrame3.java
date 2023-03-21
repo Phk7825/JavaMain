@@ -21,7 +21,7 @@ class MyFrameEx2 extends JFrame{
 		c=getContentPane();
 		pal= new JPanel();
 		pal.setBackground(Color.cyan);
-		pal.setLayout(new FlowLayout());
+		pal.setLayout(new CardLayout());
 		for(int i =0; i< 4; i++) {
 			button_lise[i]= new JButton(str_list[i]);
 			pal.add(button_lise[i]);
