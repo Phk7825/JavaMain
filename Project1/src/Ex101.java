@@ -36,7 +36,7 @@ public class Ex101 {
 		// "b : 11.1"이렇게 출력해보세요.
 		
 		double b;
-		b = 11.1;
+		b = 10/3;
 		System.out.println("b : " + b);
 	}
 }

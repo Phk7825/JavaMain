@@ -6,7 +6,7 @@ public class Tester {
 	static boolean grading(String s1, String s2) {  // s1:input, s2:answer
 		// 정답에 '또는'(||)이 포함된 경우
 		if(s2.indexOf("||") > -1) {
-			String[] arrAnswers = s2.split("||");
+			String[] arrAnswers = s2.split("\\|\\|");
 			s1 = s1.replace(" ", "").replace("-", "").toLowerCase();
 			for(int i=0; i<=arrAnswers.length-1; i++) {
 				String s3 = arrAnswers[i].replace(" ", "").replace("-", "").toLowerCase();

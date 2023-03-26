@@ -3,7 +3,7 @@ package day3;
 //	0.1을 백번 더하면?
 public class Ex303 {
 	public static void main(String[] args) {
-		float f = 0.0f;		// 0.0 뒤에 f를 붙이는 이유?
+		float f = 0f;		// 0.0 뒤에 f를 붙이는 이유?
 		for(int i = 1; i <= 100; i++) {
 			f += 0.1f;		// 또는 f = f + 0.1f;
 		}
